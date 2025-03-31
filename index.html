@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polana Rakshita - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transition: background 0.3s;
+            z-index: 1000;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            gap: 15px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #4a9eff;
+        }
+        .hero, .about, .skills, .education, .contact {
+            text-align: center;
+            padding: 100px 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .contact {
+            padding: 80px 20px;
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project{
+            text-align: ;
+        }
+        .project-card {
+            background: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project-card a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+        }
+        .project-card a:hover {
+            background: #4a9eff;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .navbar ul {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            .contact {
+                padding: 60px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/WhatsApp Image 2024-09-04 at 18.20.42 (1).jpeg" alt="Polana Rakshita" class="profile-img">
+            <span>Polana Rakshita</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Computer Science Student | Aspiring Software Developer</p>
+    </section>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a first-year B.Tech student in Computer Science and Data Science, passionate about technology, problem-solving, and innovation. With a strong interest in software development, artificial intelligence, cybersecurity, and data science, I am dedicated to learning and applying my skills to real-world challenges.</p>
+        <p>My academic journey has introduced me to various programming languages like Python, HTML, CSS, JavaScript, along with concepts in data structures, algorithms, machine learning, and cloud computing. I enjoy working on projects that involve data analytics, automation, and AI-driven applications, as they allow me to explore the potential of technology in transforming industries.</p>
+        <p>Beyond academics, I actively participate in coding competitions, hackathons, and open-source projects to sharpen my problem-solving skills and collaborate with like-minded individuals. My curiosity drives me to constantly seek new challenges, whether it’s optimizing an algorithm, securing a system, or developing a scalable application.</p>
+        <p>My goal is to bridge the gap between data and decision-making by leveraging the power of AI and big data. I aspire to build innovative solutions that enhance efficiency, improve user experiences, and solve complex problems in various domains.</p>
+        <p>I am open to internships, research projects, and collaborative opportunities where I can apply my knowledge, gain hands-on experience, and grow as a tech professional. Let’s connect and build something impactful!</p>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science at Newton School of Technology</p>
+    </section>
+    
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming: Python, MySQL, Terminal, HTML, CSS, JavaScript</li>
+            <li>CS Fundamentals: Data Structures, Algorithms, Machine Learning, Cloud Computing</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Capstone Project</h3>
+                <a href="https://github.com/Rakshita-0023/SW_Capstone">GitHub</a>
+                <a href="https://rakshita-0023.github.io/SW_Capstone/Captsone.html">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Dictionary</h3>
+                <a href="https://github.com/Rakshita-0023/Dictionary">GitHub</a>
+                <a href="https://rakshita-0023.github.io/Dictionary/">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Currency Converter</h3>
+                <a href="https://github.com/Rakshita-0023/CURRENCY-CONVERTER">GitHub</a>
+                <a href="https://rakshita-0023.github.io/CURRENCY-CONVERTER/">Live Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Pomodoro Timer</h3>
+                <a href="https://github.com/Rakshita-0023/Pomodoro-Timer">GitHub</a>
+                <a href="https://rakshita-0023.github.io/Pomodoro-Timer/">Live Demo</a>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: polana@example.com</p>
+        <p>GitHub: <a href="#">github.com/polana</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/polana</a></p>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
